@@ -1,0 +1,2 @@
+Basic commands examples - Was used two databases, both are mine: {acolhepg(local: Atlas Plataform - Project posted on linkedIn)} , {students (local: localhost - For tests)}.
+To see the codes: codes.json

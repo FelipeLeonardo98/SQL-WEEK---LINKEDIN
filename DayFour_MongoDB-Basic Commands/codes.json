@@ -1,0 +1,38 @@
+[
+    {
+        "about": "To Select * from collection (category, in this case)",
+        "code": "db.monitorangs.find({})"
+    },
+    {
+        "about": "To Select differents categories",
+        "code": "db.monitorangs.distinct('category')"
+    },
+    {
+        "about": "Searching for a specific category",
+        "code": "db.monitorangs.find({category:'PACIENTE ASSINTOMATICO E O EXAME DISPONÍVEL.'})"
+    },
+    {
+        "about": "To Group by and count (*)",
+        "code": "db.monitorangs.aggregate([{$group: {_id: '$category', amount: {$sum: 1}}}])"
+    },
+    {
+        "about": "Group by specific field (category, in this case)",
+        "code": "db.monitorangs.aggregate([{$match: {category:'CONTATO NÃO EFETIVADO E AGUARDANDO RESULTADO'}},{$group: {_id: '$category', amount: {$sum: 1}}}])"
+    },
+    {
+        "about": "Searching for a specific _id (ObjectID)",
+        "code": "db.monitorangs.findOne({_id: ObjectId('idCodeRightHere')})"
+    },
+    {
+        "about": "Insert example",
+        "code": "db.monitorangs.insertOne({category: 'Sem contato', description: 'testeInsert'})"
+    },
+    {
+        "about": "Update example",
+        "code": "db.students.updateOne({name: {$eq: 'Charles Oliveira'}}, {$set: {age:31}})"
+    },
+    {
+        "about": "Delete example",
+        "code": "db.students.deleteOne({_id: ObjectId('idCodeRightHere')})"
+    }
+]
