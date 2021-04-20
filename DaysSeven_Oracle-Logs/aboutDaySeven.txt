@@ -1,0 +1,3 @@
+  DaySeven > Oracle: Logs
+	One way of build a table of LOGIN OF LOG.
+	First of all, watching the video and look after the code! 

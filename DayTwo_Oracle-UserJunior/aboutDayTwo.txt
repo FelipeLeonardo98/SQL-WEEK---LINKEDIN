@@ -1,0 +1,4 @@
+Example of setting of new user, at context, the user "JR" has specific permissions on Resource Humans Database.
+He can see just two tables, get update only two fields, BUT, he can't access the table, he access SYNONYMS!
+Look the files!
+Was used: GRANTS and SYNONYMS
