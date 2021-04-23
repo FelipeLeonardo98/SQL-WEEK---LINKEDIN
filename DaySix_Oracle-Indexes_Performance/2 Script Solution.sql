@@ -28,10 +28,6 @@
    -- Now, Analyzing Table Student AFTER Index
   select * from students where cpf = '45197452186';
    -- COST BEFORE: 1.087  - COST AFTER BTREE INDEX: 5
-   select * from students where age BETWEEN 17 and 31;
-    -- COST: 
-   select * from students where age BETWEEN 17 and 31 ORDER BY age;
-   -- COST: 
    
    -- Students_random - Index
    CREATE INDEX IDX_AGE ON STUDENTS_RANDOM (age); --BTREE INDEX
